@@ -10,7 +10,7 @@ namespace FunctionalPrograms
             while (flag)
             {
                 Console.WriteLine("Choose an Option to Perform\n1.Flip Coin\n2.Leap Year \n3.Power of Two\n4.Nth Harmonic Number"
-                    + "\n5.Prime Factors \n6.Exit");
+                    + "\n5.Prime Factors \n6.Even or Odd \n7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -45,6 +45,12 @@ namespace FunctionalPrograms
                         primeFactors.Factors(numb);
                         break;
                     case 6:
+                        Console.WriteLine("Enter number");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        EvenOrOdd evenOrOdd = new EvenOrOdd();
+                        evenOrOdd.EvenOdd(n);
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
