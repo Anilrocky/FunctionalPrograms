@@ -10,7 +10,7 @@ namespace FunctionalPrograms
             while (flag)
             {
                 Console.WriteLine("Choose an Option to Perform\n1.Flip Coin\n2.Leap Year \n3.Power of Two\n4.Nth Harmonic Number"
-                    + "\n5.Exit");
+                    + "\n5.Prime Factors \n6.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -39,6 +39,12 @@ namespace FunctionalPrograms
                         harmonicNumber.Harmonic(number);
                         break;
                     case 5:
+                        Console.WriteLine("Enter number");
+                        int numb = Convert.ToInt32(Console.ReadLine());
+                        PrimeFactors primeFactors = new PrimeFactors();
+                        primeFactors.Factors(numb);
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
