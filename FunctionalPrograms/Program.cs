@@ -11,7 +11,7 @@ namespace FunctionalPrograms
             {
                 Console.WriteLine("Choose an Option to Perform\n1.Flip Coin\n2.Leap Year \n3.Power of Two\n4.Nth Harmonic Number"
                     + "\n5.Prime Factors \n6.Even or Odd \n7.Vowels and Consonants \n8.Quotient and Remainder"+"" +
-                    " \n9.Largest of Three Numbers \n10.Exit");
+                    " \n9.Largest of Three Numbers \n10.Swap Two Numbers \n11.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -76,6 +76,14 @@ namespace FunctionalPrograms
                         largestOf3Num.LargestNum(num1, num2, num3);
                         break;
                     case 10:
+                        Console.WriteLine("Enter num1");
+                        int n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter num2");
+                        int n2 = Convert.ToInt32(Console.ReadLine());
+                        SwapTwoNum swapTwoNum = new SwapTwoNum();
+                        swapTwoNum.SwapNum(n1, n2);
+                        break;
+                    case 11:
                         flag = false;
                         break;
                 }
