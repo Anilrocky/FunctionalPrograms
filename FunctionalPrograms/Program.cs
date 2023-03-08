@@ -10,7 +10,8 @@ namespace FunctionalPrograms
             while (flag)
             {
                 Console.WriteLine("Choose an Option to Perform\n1.Flip Coin\n2.Leap Year \n3.Power of Two\n4.Nth Harmonic Number"
-                    + "\n5.Prime Factors \n6.Even or Odd \n7.Vowels and Consonants \n8.Quotient and Remainder \n9.Exit");
+                    + "\n5.Prime Factors \n6.Even or Odd \n7.Vowels and Consonants \n8.Quotient and Remainder"+"" +
+                    " \n9.Largest of Three Numbers \n10.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -65,6 +66,16 @@ namespace FunctionalPrograms
                         quot.QuoAndRem(a, b);
                         break;
                     case 9:
+                        Console.WriteLine("Enter num1");
+                        int num1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter num2");
+                        int num2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter num3");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+                        LargestOf3Num largestOf3Num = new LargestOf3Num();
+                        largestOf3Num.LargestNum(num1, num2, num3);
+                        break;
+                    case 10:
                         flag = false;
                         break;
                 }
