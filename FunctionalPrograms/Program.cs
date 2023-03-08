@@ -10,7 +10,7 @@ namespace FunctionalPrograms
             while (flag)
             {
                 Console.WriteLine("Choose an Option to Perform\n1.Flip Coin\n2.Leap Year \n3.Power of Two\n4.Nth Harmonic Number"
-                    + "\n5.Prime Factors \n6.Even or Odd \n7.Vowels and Consonants \n8.Exit");
+                    + "\n5.Prime Factors \n6.Even or Odd \n7.Vowels and Consonants \n8.Quotient and Remainder \n9.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -57,6 +57,14 @@ namespace FunctionalPrograms
                         vowels.VowelsConsonants(alpha);
                         break;
                     case 8:
+                        Console.WriteLine("Enter number");
+                        int a = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter another num");
+                        int b = Convert.ToInt32(Console.ReadLine());
+                        QuotientAndRemainder quot = new QuotientAndRemainder();
+                        quot.QuoAndRem(a, b);
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }
