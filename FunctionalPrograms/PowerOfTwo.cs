@@ -5,11 +5,9 @@ namespace FunctionalPrograms
     {
         public void Power(int power) 
         { 
-            for (int i = 0; i <= power; i++)
+            for (int i = 0; i <= power && power<31; i++)
             {
-                    Console.WriteLine("2^" + i + " = " + Math.Pow(2, i));
-                if (i == 30)
-                    break;
+                Console.WriteLine("2^" + i + " = " + Math.Pow(2, i));
             }
         }
     }
